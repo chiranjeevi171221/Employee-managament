@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Details Form</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+	body{
+		background-color: black;
+	}
+
+	.head{
+				
+				text-align:center;
+				background-color:#006666;	
+				color:#fff;
+				padding:2px;
+				padding-left: 65px;
+				padding-right: 25px;
+				border-radius:10px;
+				margin-bottom: 15px;
+				height:70px;
+				width: 250px;
+				margin-right: 100px;
+				transition:transform 0.3s ease-in-out;
+				
+			}
+			.head:hover{
+				transform:scale(1.05);
+			}
+.container{
+	
+	background-color:ghostwhite;
+	
+	margin-top: 0px;
+	margin-right: 100px;
+	padding-top: 10px;
+	height:300px;
+	width: 400px;
+	display: flex;
+	border-radius: 10px;
+	transition:transform 0.3s ease-in-out;
+	
+}
+.container:hover{
+	transform:scale(1.05);
+}
+.card{
+	padding: 20px;
+	border-radius: 10px;
+	margin-right: 50px;
+	text-align: right;
+	
+	
+}
+
+.details{
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bolder;
+	font-size: 20px;
+	text-decoration: firebrick;
+	
+}
+.main{
+	text-align: center;
+	border-radius:  10px;
+	border-style: dotted;
+	display: inline-block;
+}
+.button{
+	justify-content: center;
+	width: 70px;
+	height: 30px;
+	color: maroon;
+	margin-left: 90px;
+	margin-top: 20px;
+	border-radius: 5px;
+	transition:background-color 0.3s ease-in-out;
+}
+.button:hover{
+	color:white;
+	background-color: darkred;
+	cursor: pointer;
+	
+}
+.head{
+	margin-top: 100px;
+	padding-right: 90px;	
+}
+
+	 
+</style>
+
+</head>
+<body class="body1">
+    
+    <center>
+    <form  action="Registration" method="post" class="form">
+		<div class="head"><h1><strong>Employee Details</strong></h1></div>
+        <div class="container">
+				<div class="card">
+					<div class="details">Id:<input type="number" name="id" class="main" required></div>
+					<div class="details">Name:<input type="text" name="name" class="main" required></div>
+					<div class="details">Email:<input type="text" name="email" class="main" required></div>
+					
+					<div class="details">Department:<input type="text" name="department" class="main" required></div>
+					<div class="details">Salary:<input type="number" name="salary" class="main" required></div>	
+					<center><input type="submit" name="submit" class="button"></center>
+				</div>
+			
+		</div>
+    </form>
+    </center>
+</body>
+</html>
